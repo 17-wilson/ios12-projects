@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,65 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_1_IAmRich" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ruby" translatesAutoresizingMaskIntoConstraints="NO" id="tNd-tv-79j">
+                                <rect key="frame" x="87.666666666666686" y="306" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="IXc-31-eSt"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="Ysl-Vy-TgA"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="fQa-tx-meZ"/>
+                                    <constraint firstAttribute="width" constant="200" id="zK3-fi-UCs"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ofd-7Y-d5w">
+                                <rect key="frame" x="147" y="606" width="81" height="30"/>
+                                <state key="normal" title="Precioname">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="PressButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3f2-GG-jWH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I Am Rich" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWf-rx-DaB">
+                                <rect key="frame" x="132" y="227" width="130" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.41892001295336789" green="0.074226824731651569" blue="0.41519145325737344" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ofd-7Y-d5w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="147" id="2eZ-Gm-5kH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ofd-7Y-d5w" secondAttribute="bottom" constant="142" id="685-Wm-5YT"/>
+                            <constraint firstItem="tNd-tv-79j" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="OzH-yj-KRT"/>
+                            <constraint firstItem="tNd-tv-79j" firstAttribute="top" secondItem="HWf-rx-DaB" secondAttribute="bottom" constant="43" id="Sar-mu-LdL"/>
+                            <constraint firstItem="Ofd-7Y-d5w" firstAttribute="top" secondItem="tNd-tv-79j" secondAttribute="bottom" constant="100" id="anQ-Tj-79h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ofd-7Y-d5w" secondAttribute="trailing" constant="147" id="eda-No-tEA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HWf-rx-DaB" secondAttribute="trailing" constant="113" id="iEJ-CD-Bsv"/>
+                            <constraint firstItem="tNd-tv-79j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="phJ-0J-Zl0"/>
+                            <constraint firstItem="HWf-rx-DaB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="183" id="pmy-sl-c0s"/>
+                            <constraint firstItem="HWf-rx-DaB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="usI-q6-P7Q"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="buttonViewPrecioname" destination="Ofd-7Y-d5w" id="Wgp-Lm-ElO"/>
+                        <outlet property="imagenViewDiamante" destination="tNd-tv-79j" id="c7e-nL-e0h"/>
+                        <outlet property="labeltitle" destination="HWf-rx-DaB" id="7YR-Tq-ixF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="22.906403940886701"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ruby" width="122.66666412353516" height="133.66667175292969"/>
+    </resources>
 </document>

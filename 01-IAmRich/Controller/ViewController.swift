@@ -8,14 +8,24 @@
 
 import UIKit
 
-class ViewController: UIViewController {
 
+class ViewController: UIViewController {
+// PROPERTYS
+    
+    @IBOutlet weak var labeltitle: UILabel!
+    
+    @IBOutlet weak var imagenViewDiamante: UIImageView!
+    @IBOutlet weak var buttonViewPrecioname: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("hola mundo")
         // Do any additional setup after loading the view, typically from a nib.
     }
 
 
+    //METHODS
+    @IBAction func PressButton(_ sender: UIButton) {
+        print("hola mundo")
+    }
 }
+
 

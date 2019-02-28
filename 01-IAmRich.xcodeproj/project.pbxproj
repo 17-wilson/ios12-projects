@@ -58,7 +58,6 @@
 				397E1CBE222880C300D21814 /* Controller */,
 				397E1CAB22287A1A00D21814 /* AppDelegate.swift */,
 				397E1CB222287A2200D21814 /* Assets.xcassets */,
-				397E1CB422287A2200D21814 /* LaunchScreen.storyboard */,
 				397E1CB722287A2200D21814 /* Info.plist */,
 			);
 			path = "01-IAmRich";
@@ -75,6 +74,7 @@
 		397E1CBF2228812000D21814 /* storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				397E1CB422287A2200D21814 /* LaunchScreen.storyboard */,
 				397E1CAF22287A1A00D21814 /* Main.storyboard */,
 			);
 			path = storyboard;
