@@ -37,7 +37,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I Am Rich" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWf-rx-DaB">
-                                <rect key="frame" x="132" y="227" width="130" height="36"/>
+                                <rect key="frame" x="122.66666666666669" y="227" width="130" height="36"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -53,10 +53,9 @@
                             <constraint firstItem="tNd-tv-79j" firstAttribute="top" secondItem="HWf-rx-DaB" secondAttribute="bottom" constant="43" id="Sar-mu-LdL"/>
                             <constraint firstItem="Ofd-7Y-d5w" firstAttribute="top" secondItem="tNd-tv-79j" secondAttribute="bottom" constant="100" id="anQ-Tj-79h"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ofd-7Y-d5w" secondAttribute="trailing" constant="147" id="eda-No-tEA"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HWf-rx-DaB" secondAttribute="trailing" constant="113" id="iEJ-CD-Bsv"/>
                             <constraint firstItem="tNd-tv-79j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="phJ-0J-Zl0"/>
                             <constraint firstItem="HWf-rx-DaB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="183" id="pmy-sl-c0s"/>
-                            <constraint firstItem="HWf-rx-DaB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="usI-q6-P7Q"/>
+                            <constraint firstItem="HWf-rx-DaB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s8p-WF-KMd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
